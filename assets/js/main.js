@@ -1,7 +1,7 @@
 //capiturando os botoes
 let botaoEnviar = document.querySelector("#calcular-imc");
 
-let botaoLimpar = document.querySelector("#limpar")
+let botaoLimpar = document.querySelector("#limpar");
 
 botaoLimpar.addEventListener("click", event =>{
    
