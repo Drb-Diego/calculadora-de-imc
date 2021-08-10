@@ -28,12 +28,10 @@ botaoEnviar.addEventListener("click", event => {
 
       //Fazendo o cauculo do imc 
       let imc = peso / (altura * altura);
-      console.log(imc);
-      
       imc = imc * casasDecimais;
       imc = imc.toFixed(1);
 
-      let { resultado,status } = validaImc(imc);
+      let { resultado, status } = validaImc(imc);
       criarParagrafo(resultado, status);
 
    }
