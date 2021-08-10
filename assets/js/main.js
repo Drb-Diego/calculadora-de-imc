@@ -120,11 +120,11 @@ function validaImc(imc) {
 }
 
 function limpaResultado(){
-
-
-   // Removendo um elemento específico quando se conhece seu pai
+   //capturando a tag pai "divResultado" e a tag filha "p"
    let divResultado = document.getElementById("resultado");
    let paragrafo = document.getElementsByTagName("p");
+
+   //removendo as tags "p" do indice 0
    divResultado = divResultado.removeChild(paragrafo[0]);
 
 
