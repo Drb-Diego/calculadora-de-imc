@@ -16,7 +16,7 @@ botaoEnviar.addEventListener("click", event => {
    let pesoEhvalido = true;
    let alturaEhvalida = true;
 
-   if (peso > 595 || peso < 2 || altura > 238 || altura < 72) {
+   if (peso > 595 || peso < 2 || altura > 238 || altura < 72 || peso != "number" || altura != "number") {
       pesoEhvalido = false;
       alturaEhvalida = false;
       alert("Altura ou peso invalido");
@@ -31,7 +31,7 @@ botaoEnviar.addEventListener("click", event => {
       imc = imc * casasDecimais;
       imc = imc.toFixed(1);
 
-      let { resultado, status } = validaImc(imc);
+      let {resultado,status} = validaImc(imc);
       criarParagrafo(resultado, status);
 
    }
@@ -114,13 +114,13 @@ function validaImc(imc) {
 
 let botaoLimpar = document.querySelector("#limpar");
 
-botaoLimpar.addEventListener("click", event =>{
-   
+botaoLimpar.addEventListener("click", event => {
+
    event.preventDefault();
    limpaResultado();
 });
 
-function limpaResultado(){
+function limpaResultado() {
 
    //capturando a tag pai "divResultado" e a tag filha "p"
    document.getElementById("resultado").innerHTML = "";
