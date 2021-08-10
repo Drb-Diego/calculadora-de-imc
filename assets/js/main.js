@@ -34,7 +34,7 @@ botaoEnviar.addEventListener("click", event => {
       //Casas decimais para pular
       let casasDecimais = 10000;
 
-      //Fazendo o cauculo do imc (funcionando)
+      //Fazendo o cauculo do imc 
       let imc = peso / (altura * altura);
       imc = imc * casasDecimais;
       imc = imc.toFixed(1);
