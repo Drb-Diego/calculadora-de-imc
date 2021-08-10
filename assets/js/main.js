@@ -27,6 +27,7 @@ botaoEnviar.addEventListener("click", event => {
    if (peso > 595 || peso < 2 || altura > 238 || altura < 72) {
       pesoEhvalido = false;
       alturaEhvalida = false;
+      alert("Altura ou peso invalido");
    }
    if (pesoEhvalido && alturaEhvalida) {
 
