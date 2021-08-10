@@ -1,4 +1,4 @@
-//capiturando o formulario
+//capiturando os botoes
 let botaoEnviar = document.querySelector("#calcular-imc");
 
 let botaoLimpar = document.querySelector("#limpar")
@@ -32,16 +32,13 @@ botaoEnviar.addEventListener("click", event => {
 
       //Casas decimais para pular
       let casasDecimais = 10000;
+
       //Fazendo o cauculo do imc (funcionando)
       let imc = peso / (altura * altura);
       imc = imc * casasDecimais;
       imc = imc.toFixed(1);
 
-      let {
-         resultado,
-         status
-      } = validaImc(imc);
-      console.log(resultado, status);
+      let { resultado,status } = validaImc(imc);
       criarParagrafo(resultado, status);
 
    }
