@@ -1,14 +1,6 @@
 //capiturando os botoes
 let botaoEnviar = document.querySelector("#calcular-imc");
 
-let botaoLimpar = document.querySelector("#limpar");
-
-botaoLimpar.addEventListener("click", event =>{
-   
-   event.preventDefault();
-   limpaResultado();
-});
-
 // Escutador de eventos, para fazer o calculo do imc
 botaoEnviar.addEventListener("click", event => {
 
@@ -118,6 +110,15 @@ function validaImc(imc) {
    }
 
 }
+
+
+let botaoLimpar = document.querySelector("#limpar");
+
+botaoLimpar.addEventListener("click", event =>{
+   
+   event.preventDefault();
+   limpaResultado();
+});
 
 function limpaResultado(){
    //capturando a tag pai "divResultado" e a tag filha "p"
