@@ -41,12 +41,12 @@
 
       <section>
         <h1>Calcule seu IMC</h1>
-        <form action="/" id="formulario" method="POST">
+        <form id="formulario">
           <label for="peso">Peso (kg)</label>
-          <input type="text" id="peso" name="peso">
+          <input type="text" id="peso" name="peso" required>
           <label for="altura">Altura (cm)</label>
           <input type="text" id="altura" name="altura">
-          <button type="submit" id="calcular-imc">Enviar</button>
+          <button type="submit" id="calcular-imc" required>Enviar</button>
           <button type="submit" id="limpar">Limpar</button>
         </form>
 

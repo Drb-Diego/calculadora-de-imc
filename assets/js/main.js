@@ -28,6 +28,8 @@ botaoEnviar.addEventListener("click", event => {
 
       //Fazendo o cauculo do imc 
       let imc = peso / (altura * altura);
+      console.log(imc);
+      
       imc = imc * casasDecimais;
       imc = imc.toFixed(1);
 
@@ -121,12 +123,7 @@ botaoLimpar.addEventListener("click", event =>{
 });
 
 function limpaResultado(){
+
    //capturando a tag pai "divResultado" e a tag filha "p"
-   let divResultado = document.getElementById("resultado");
-   let paragrafo = document.getElementsByTagName("p");
-
-   //removendo as tags "p" do indice 0
-   divResultado = divResultado.removeChild(paragrafo[0]);
-
-
+   document.getElementById("resultado").innerHTML = "";
 }
