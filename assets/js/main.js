@@ -1,4 +1,4 @@
-//capiturando os botoes
+//capiturando os botao enviar
 let botaoEnviar = document.querySelector("#calcular-imc");
 
 // Escutador de eventos, para fazer o calculo do imc
@@ -8,19 +8,30 @@ botaoEnviar.addEventListener("click", event => {
 
    //Capturando valor do peso
    let peso = document.querySelector("#peso").value;
-
+   
    //Capturando valor da altura
    let altura = document.querySelector("#altura").value;
-
-
+   
    let pesoEhvalido = true;
    let alturaEhvalida = true;
+   
+   if (typeof peso != "number" ||typeof altura != "number" || altura === NaN || peso === NaN){
+      pesoEhvalido = false;
+      alturaEhvalida = false;
+      return alert("Altura ou peso invalido");
+   }
+   
+   altura = parseInt(altura);
 
-   if (peso > 595 || peso < 2 || altura > 238 || altura < 72 || peso != "number" || altura != "number") {
+   peso = parseFloat(peso);
+   
+   if (peso > 595 || peso < 2 || altura > 238 || altura < 72) {
+     
       pesoEhvalido = false;
       alturaEhvalida = false;
       alert("Altura ou peso invalido");
    }
+
    if (pesoEhvalido && alturaEhvalida) {
 
       //Casas decimais para pular
@@ -111,6 +122,7 @@ function validaImc(imc) {
 
 }
 
+//capiturando os botao limpar
 
 let botaoLimpar = document.querySelector("#limpar");
 
@@ -122,6 +134,6 @@ botaoLimpar.addEventListener("click", event => {
 
 function limpaResultado() {
 
-   //capturando a tag pai "divResultado" e a tag filha "p"
-   document.getElementById("resultado").innerHTML = "";
+  
+   document.querySelector("#resultado").innerHTML = "";
 }
