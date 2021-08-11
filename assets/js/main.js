@@ -20,9 +20,10 @@ botaoEnviar.addEventListener("click", event => {
       alturaEhvalida = false;
       return alert("Altura ou peso invalido");
    }
-   
+   //Convertendo valor do input para int
    altura = parseInt(altura);
-
+   
+   //Convertendo valor do input para float
    peso = parseFloat(peso);
    
    if (peso > 595 || peso < 2 || altura > 238 || altura < 72) {
