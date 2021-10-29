@@ -1,4 +1,4 @@
-//capiturando os botao enviar
+//capturando os botao enviar
 let botaoEnviar = document.querySelector("#calcular-imc");
 
 // Escutador de eventos, para fazer o calculo do imc
@@ -11,21 +11,25 @@ botaoEnviar.addEventListener("click", event => {
    
    //Capturando valor da altura
    let altura = document.querySelector("#altura").value;
-   
+
    let pesoEhvalido = true;
    let alturaEhvalida = true;
    
-   if (typeof peso != "number" ||typeof altura != "number" || altura === NaN || peso === NaN){
-      pesoEhvalido = false;
-      alturaEhvalida = false;
-      return alert("Altura ou peso invalido");
-   }
    //Convertendo valor do input para int
    altura = parseInt(altura);
    
    //Convertendo valor do input para float
    peso = parseFloat(peso);
    
+   if (
+         typeof peso != "number" || typeof altura != "number" 
+         || altura === NaN || peso === NaN
+      ){
+      pesoEhvalido = false;
+      alturaEhvalida = false;
+      return alert("Altura ou peso invalido");
+   }
+
    if (peso > 595 || peso < 2 || altura > 238 || altura < 72) {
      
       pesoEhvalido = false;
