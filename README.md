@@ -15,7 +15,8 @@
   <img src="./projeto-imc.png" alt="imagem do projeto" width="1000px" heigth="800px">
 </p>
 
-> Link da aplicação: **https://drb-diego.github.io/calculadora-de-imc**
+> Link da aplicação: <a href="https://drb-diego.github.io/calculadora-de-imc">Calculadora de imc</a>
+
 
 ### Ajustes e melhorias
 
