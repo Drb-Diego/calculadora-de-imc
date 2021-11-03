@@ -1,8 +1,8 @@
-# Calculadora de imc
+# Calculadora de imc 📚
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 <h1>
-  Tecnologias
+  Tecnologias 👨‍💻
   </br>
   <div align="center">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
