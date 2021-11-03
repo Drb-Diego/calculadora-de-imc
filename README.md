@@ -49,6 +49,4 @@ Depois Abra o arquivo "index.html" no seu navegador de preferencia
 
 **Clone o repositório**
 
-Depois execute os seguintes comando
-
 Depois Abra o arquivo "index.html" no seu navegador de preferencia
