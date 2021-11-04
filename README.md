@@ -17,6 +17,8 @@
 
 > Link da aplicação: <a href="https://drb-diego.github.io/calculadora-de-imc">Calculadora de imc</a>
 
+## 🖖🏼 Objetivo
+O objetivo desse projeto é criar uma calculadora que mede seu índice de massa corporal ou IMC e exercitar tecnologias que eu aprendi recentemente, como por exemplo, JavaScript e como monipular HTLM atraves do DOM.
 
 ### Ajustes e melhorias
 
