@@ -40,24 +40,11 @@ Para instalar o Calculadora de imc, siga estas etapas:
 
 </br>
 
-***Linux e macOS:***
+***Linux, macOS e Windows:***
 
 **Clone o repositório**
 ```
   git clone https://github.com/Drb-Diego/calculadora-de-imc.git
 ```
-
-Depois Abra o arquivo "index.html" no seu navegador de preferencia
-
-</br>
-
-***Windows:***
-
-**Clone o repositório**
-
-```
-  git clone https://github.com/Drb-Diego/calculadora-de-imc.git
-```
-
 
 Depois Abra o arquivo "index.html" no seu navegador de preferencia
